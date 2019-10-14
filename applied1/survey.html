@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sage Bistro</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="_css/al1.css">
+  <link rel="stylesheet" href="themes/ctheme1.css">
+
+</head>
+
+<body>
+  <!-- Benjamin Cook
+     assignment?.html
+     INFO2439
+     Thoendel
+     9/4/2019
+-->
+  <div data-role="page" id="homePage">
+    <div data-role="header">
+      <a data-ajax="false" href="../index.html" data-icon="home" rel="external">Home</a>
+      <p style="text-align:center;"><img src="photos/sagelogo.png" alt="Sage Bistro Logo"></p>
+    </div>
+    <div class="topnav">
+        <a data-ajax="false" href="menu.html">Menu</a>
+        <a data-ajax="false" href="reservation.html">Reservations</a>
+        <a data-ajax="false" href="survey.html">Survey</a>
+        <a data-ajax="false" href="map.html">Location</a>
+    </div>
+    <form method="post" action="https://www.mccinfo.net/webresources/ogi-bin/formmail.asp">
+      <input name="recipient" type="hidden" value="bcook30@mail.mccneb.edu">
+      <div class="ui-field-contain">
+        <label for="bname">Student Name:</label>
+        <input type="text" name="stuname" id="stuname" value="" />
+      </div>
+      <div class="ui-field-contain">
+        <h1>Service Evaluation</h1>
+        <label for="greet">Greeting:</label>
+        <select name="greet" id="greet">
+          <option value="1-Poor">1-Poor</option>
+          <option value="2-Needs Work">2-Needs Work</option>
+          <option value="3-Fair">3-Fair</option>
+          <option value="4-Good">4-Good</option>
+          <option value="5-Excellent">5-Excellent</option>
+        </select>
+      </div>
+      <div class="ui-field-contain">
+        <label for="behave">Behavior:</label>
+        <select name="behave" id="behave">
+          <option value="1-Poor">1-Poor</option>
+          <option value="2-Needs Work">2-Needs Work</option>
+          <option value="3-Fair">3-Fair</option>
+          <option value="4-Good">4-Good</option>
+          <option value="5-Excellent">5-Excellent</option>
+        </select>
+      </div>
+      <div class="ui-field-contain">
+        <label for="overallservice">Overall dining experience:</label>
+        <select name="overallservice" id="overallservice">
+          <option value="1-Poor">1-Poor</option>
+          <option value="2-Needs Work">2-Needs Work</option>
+          <option value="3-Fair">3-Fair</option>
+          <option value="4-Good">4-Good</option>
+          <option value="5-Excellent">5-Excellent</option>
+        </select>
+      </div>
+      <div class="ui-field-contain">
+        <h1>Food Evaluation</h1>
+        <label for="taste">Taste:</label>
+        <select name="taste" id="taste">
+          <option value="1-Poor">1-Poor</option>
+          <option value="2-Needs Work">2-Needs Work</option>
+          <option value="3-Fair">3-Fair</option>
+          <option value="4-Good">4-Good</option>
+          <option value="5-Excellent">5-Excellent</option>
+        </select>
+      </div>
+      <div class="ui-field-contain">
+        <label for="pres">Presentation:</label>
+        <select name="pres" id="pres">
+          <option value="1-Poor">1-Poor</option>
+          <option value="2-Needs Work">2-Needs Work</option>
+          <option value="3-Fair">3-Fair</option>
+          <option value="4-Good">4-Good</option>
+          <option value="5-Excellent">5-Excellent</option>
+        </select>
+      </div>
+      <div class="ui-field-contain">
+        <label for="overallfood">Overall dining experience:</label>
+        <select name="overallfood" id="overallfood">
+          <option value="1-Poor">1-Poor</option>
+          <option value="2-Needs Work">2-Needs Work</option>
+          <option value="3-Fair">3-Fair</option>
+          <option value="4-Good">4-Good</option>
+          <option value="5-Excellent">5-Excellent</option>
+        </select>
+      </div>
+    </form>
+    <div class="ui-field-contain">
+      <label></label>
+        <input type="submit" name="submit" value="Send" />
+      </div>
+      <div data-role="footer" data-position="fixed" class="footer">Contact: <a href="mailto:bcook30@mail.mccneb.edu"
+        class="ui-btn-active">Benjamin Cook</a></div>
+</div>
+  
+
+</body>
+
+</html>
